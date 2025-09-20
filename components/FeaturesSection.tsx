@@ -5,8 +5,8 @@ import styles from './FeaturesSection.module.css';
 const features = [
   {
     icon: <Inbox size={24} />,
-    title: 'Unified Inbox',
-    description: 'Manage all customer conversations from email, chat, and social media in one central place.',
+    title: 'Unified Ecosystem',
+    description: 'Manage all customer information from tickets, chat, and social media in one central place.',
   },
   {
     icon: <Bot size={24} />,
@@ -21,7 +21,7 @@ const features = [
   {
     icon: <Workflow size={24} />,
     title: 'Automated Workflows',
-    description: 'Automate repetitive tasks, ticket routing, and escalations to improve team efficiency.',
+    description: 'MCP tools automate repetitive tasks, prioritize tickets, and route inquiries to the right agents.',
   },
   {
     icon: <BarChart size={24} />,
