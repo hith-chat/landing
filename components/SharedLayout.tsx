@@ -42,7 +42,7 @@ export const SharedLayout = ({ children }: SharedLayoutProps) => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>Floot</span>
+            <span>Taral</span>
           </Link>
           <nav className={styles.nav}>
             <NavLink
