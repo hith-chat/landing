@@ -1,0 +1,30 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { HeroSection } from '../components/HeroSection';
+import { FeaturesSection } from '../components/FeaturesSection';
+import { TestimonialsSection } from '../components/TestimonialsSection';
+import { CTASection } from '../components/CTASection';
+import { Footer } from '../components/Footer';
+
+export default function IndexPage() {
+  return (
+    <>
+      <Helmet>
+        <title>SupportFlow | Modern Ticket Management & AI Chat</title>
+        <meta
+          name="description"
+          content="Streamline your customer support with our integrated ticket management system and AI-powered chat platform. Fast, efficient, and intelligent solutions."
+        />
+      </Helmet>
+      
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
+      
+      <Footer />
+    </>
+  );
+}
