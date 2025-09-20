@@ -11,7 +11,7 @@ export default function IndexPage() {
   return (
     <>
       <Helmet>
-        <title>SupportFlow | Modern Ticket Management & AI Chat</title>
+        <title>Taral | Modern Ticket Management & AI Chat</title>
         <meta
           name="description"
           content="Streamline your customer support with our integrated ticket management system and AI-powered chat platform. Fast, efficient, and intelligent solutions."

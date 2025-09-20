@@ -10,11 +10,11 @@ export const Footer = ({ className }: { className?: string }) => {
         <div className={styles.main}>
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <Ticket size={24} />
-              <span>SupportFlow</span>
+              <img src="/public/assets/logo.svg" alt="Taral logo" width={32} height={32} />
+              <span>Taral</span>
             </Link>
             <p className={styles.tagline}>
-              The future of customer support.
+              The future of easy customer support.
             </p>
           </div>
           <div className={styles.linksGrid}>
@@ -55,7 +55,7 @@ export const Footer = ({ className }: { className?: string }) => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} SupportFlow, Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Penify Technologies Pvt Ltd. All rights reserved.</p>
           {/* Social media links can be added here */}
         </div>
       </div>

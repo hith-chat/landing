@@ -10,9 +10,6 @@ export const HeroSection = ({ className }: { className?: string }) => {
     <section className={`${styles.hero} ${className || ''}`}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.badge}>
-            <span>New!</span> Announcing our new AI-powered features
-          </div>
           <h1 className={styles.headline}>
             Effortless Support,
             <br />
