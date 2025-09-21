@@ -16,26 +16,6 @@ export const SharedLayout = ({ children }: SharedLayoutProps) => {
           <Link to="/" className={styles.logo}>
             <img src={logoSvg} alt="Hith logo" width={120} height={32} />
           </Link>
-          <nav className={styles.nav}>
-            <NavLink
-              to="/tickets"
-              className={({ isActive }) =>
-                `${styles.navLink} ${isActive ? styles.active : ''}`
-              }
-            >
-              <Ticket size={16} />
-              <span>Tickets</span>
-            </NavLink>
-            <NavLink
-              to="/chat"
-              className={({ isActive }) =>
-                `${styles.navLink} ${isActive ? styles.active : ''}`
-              }
-            >
-              <MessageSquare size={16} />
-              <span>AI Chat</span>
-            </NavLink>
-          </nav>
         </div>
       </header>
       <main className={styles.main}>{children}</main>

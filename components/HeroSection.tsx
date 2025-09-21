@@ -25,7 +25,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
               <Link to="/signup">Get Started for Free</Link>
             </Button>
             <Button asChild variant="ghost" size="lg">
-              <a href="https://calendly.com/sumansaurabh-snorkell/heith" target="_blank" rel="noreferrer">
+              <a href="https://calendly.com/sumansaurabh-1/heith" target="_blank" rel="noreferrer">
                 Book a Demo <MoveRight size={20} />
               </a>
             </Button>
