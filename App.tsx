@@ -5,6 +5,7 @@ import Page_0 from "./pages/_index.tsx";
 import PageLayout_0 from "./pages/_index.pageLayout.tsx";
 import Page_Privacy from "./pages/privacy.tsx";
 import Terms_of_Service from "./pages/terms.tsx";
+import Contact_Page from "./pages/contact.tsx";
 
 if (!window.requestIdleCallback) {
   window.requestIdleCallback = (cb) => {
@@ -22,12 +23,14 @@ const fileNameToRoute = new Map([
   ["./pages/_index.tsx", "/"],
   ["./pages/privacy.tsx", "/privacy"],
   ["./pages/terms.tsx", "/terms"],
+  ["./pages/contact.tsx", "/contact"],
   
 ]);
 const fileNameToComponent: Map<string, React.ComponentType<any>> = new Map([
   ["./pages/_index.tsx", Page_0],
   ["./pages/privacy.tsx", Page_Privacy],
   ["./pages/terms.tsx", Terms_of_Service],
+  ["./pages/contact.tsx", Contact_Page],
 ]);
 
 function makePageRoute(filename: string) {
@@ -117,6 +120,7 @@ export function App() {
 "./pages/_index.tsx": PageLayout_0,
 "./pages/privacy.tsx": PageLayout_0,
 "./pages/terms.tsx": PageLayout_0,
+"./pages/contact.tsx": PageLayout_0,
 }), fileNameToRoute, makePageRoute })} 
           <Route path="*" element={<NotFound />} />
         </Routes>
