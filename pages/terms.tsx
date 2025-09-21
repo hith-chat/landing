@@ -34,6 +34,17 @@ export default function TermsPage() {
   }, []);
 
   function renderOutsideTerms() {
+    const highlightBox: React.CSSProperties = {
+      background: '#fff7f0',
+      border: '1px solid #ffd1a9',
+      padding: 16,
+      borderRadius: 6,
+      marginTop: 8,
+      marginBottom: 16,
+    };
+
+    const h1Style: React.CSSProperties = { marginTop: 0 };
+
     return (
       <div>
         <h1>Terms of Service</h1>
@@ -137,13 +148,15 @@ export default function TermsPage() {
           NON-INFRINGEMENT.
         </p>
 
-        <h3>8.2 Limitation of Liability</h3>
-        <p>
-          TO THE MAXIMUM EXTENT PERMITTED BY LAW, PENIFY TECHNOLOGIES LLC SHALL
-          NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
-          OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS,
-          DATA, OR BUSINESS INTERRUPTION.
-        </p>
+        <h3 style={{ color: '#7a1f1f' }}>8.2 Limitation of Liability</h3>
+        <div style={highlightBox}>
+          <p style={{ margin: 0, fontWeight: 600 }}>
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, PENIFY TECHNOLOGIES LLC SHALL
+            NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+            OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS,
+            DATA, OR BUSINESS INTERRUPTION.
+          </p>
+        </div>
 
         <h2>9. Termination</h2>
         <h3>9.1 Termination by You</h3>
@@ -184,6 +197,15 @@ export default function TermsPage() {
   }
 
   function renderIndiaTerms() {
+    const highlightBox: React.CSSProperties = {
+      background: '#fff7f0',
+      border: '1px solid #ffd1a9',
+      padding: 16,
+      borderRadius: 6,
+      marginTop: 8,
+      marginBottom: 16,
+    };
+
     return (
       <div>
         <h1>Terms of Service</h1>
@@ -351,29 +373,31 @@ export default function TermsPage() {
           trademarks.
         </p>
 
-        <h3>Limitation of Liability</h3>
-        <p>
-          To the fullest extent permitted by applicable law, in no event will
-          Snorkell Associates and Co, its affiliates, directors, officers,
-          employees, agents, suppliers or licensors be liable to any person for
-          any indirect, incidental, special, punitive, cover or consequential
-          damages (including, without limitation, damages for lost profits,
-          revenue, sales, goodwill, use of content, impact on business, business
-          interruption, loss of anticipated savings, loss of business
-          opportunity) however caused, under any theory of liability, including,
-          without limitation, contract, tort, warranty, breach of statutory
-          duty, negligence or otherwise, even if the liable party has been
-          advised as to the possibility of such damages or could have foreseen
-          such damages. To the maximum extent permitted by applicable law, the
-          aggregate liability of Snorkell Associates and Co and its affiliates,
-          officers, employees, agents, suppliers and licensors relating to the
-          services will be limited to an amount no greater than one dollar or
-          any amounts actually paid in cash by you to Snorkell Associates and
-          Co for the prior one month period prior to the first event or
-          occurrence giving rise to such liability. The limitations and
-          exclusions also apply if this remedy does not fully compensate you for
-          any losses or fails of its essential purpose.
-        </p>
+        <h3 style={{ color: '#7a1f1f' }}>Limitation of Liability</h3>
+        <div style={highlightBox}>
+          <p style={{ margin: 0, fontWeight: 600 }}>
+            To the fullest extent permitted by applicable law, in no event will
+            Snorkell Associates and Co, its affiliates, directors, officers,
+            employees, agents, suppliers or licensors be liable to any person for
+            any indirect, incidental, special, punitive, cover or consequential
+            damages (including, without limitation, damages for lost profits,
+            revenue, sales, goodwill, use of content, impact on business, business
+            interruption, loss of anticipated savings, loss of business
+            opportunity) however caused, under any theory of liability, including,
+            without limitation, contract, tort, warranty, breach of statutory
+            duty, negligence or otherwise, even if the liable party has been
+            advised as to the possibility of such damages or could have foreseen
+            such damages. To the maximum extent permitted by applicable law, the
+            aggregate liability of Snorkell Associates and Co and its affiliates,
+            officers, employees, agents, suppliers and licensors relating to the
+            services will be limited to an amount no greater than one dollar or
+            any amounts actually paid in cash by you to Snorkell Associates and
+            Co for the prior one month period prior to the first event or
+            occurrence giving rise to such liability. The limitations and
+            exclusions also apply if this remedy does not fully compensate you for
+            any losses or fails of its essential purpose.
+          </p>
+        </div>
 
         <h3>Fees and Pricing</h3>
         <p>
@@ -475,14 +499,16 @@ export default function TermsPage() {
   }
 
   return (
-    <div style={{ padding: 20 }}>
-      {loading && <p>Loading terms of service...</p>}
-      {error && <p style={{ color: "red" }}>Failed to load terms: {error}</p>}
-      {!loading && !error && (
-        <div>
-          {currency === "INR" ? renderIndiaTerms() : renderOutsideTerms()}
-        </div>
-      )}
+    <div style={{ padding: 20, display: 'flex', justifyContent: 'center' }}>
+      <div style={{ maxWidth: 900, width: '100%' }}>
+        {loading && <p>Loading terms of service...</p>}
+        {error && <p style={{ color: "red" }}>Failed to load terms: {error}</p>}
+        {!loading && !error && (
+          <div>
+            {currency === "INR" ? renderIndiaTerms() : renderOutsideTerms()}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
