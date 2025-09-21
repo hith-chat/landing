@@ -62,8 +62,8 @@ export default function TermsPage() {
         <p>
           Service Provider: Penify Technologies LLC<br />
           Registered Address: 30 N Gould St Ste N, Sheridan, WY 82801<br />
-          Email: support@bareuptime.co<br />
-          Website: https://bareuptime.co
+          Email: support@hith.chat<br />
+          Website: https://hith.chat
         </p>
 
         <h2>3. Description of Service</h2>
@@ -112,7 +112,7 @@ export default function TermsPage() {
         <h2>6. Subscription Plans and Pricing</h2>
         <h3>6.1 Service Plans</h3>
         <p>
-          Free Plan: Up to 50 monitors with basic features. Paid Plans: Starting at $15/year with additional features and monitors. Plan details and current pricing available at https://bareuptime.co
+          Free Plan: Up to 50 monitors with basic features. Paid Plans: Starting at $15/year with additional features and monitors. Plan details and current pricing available at https://hith.chat
         </p>
 
         <h3>6.2 Payment Terms</h3>
@@ -186,8 +186,8 @@ export default function TermsPage() {
         <h2>11. Contact Information</h2>
         <p>
           For questions about these Terms of Service, contact us:<br />
-          Email: legal@bareuptime.co<br />
-          Support: support@bareuptime.co<br />
+          Email: legal@hith.chat<br />
+          Support: support@hith.chat<br />
           Address: Penify Technologies LLC, 30 N Gould St Ste N, Sheridan, WY 82801
         </p>
 
@@ -490,7 +490,7 @@ export default function TermsPage() {
           If you have any questions, concerns, or complaints regarding this
           Agreement, we encourage you to contact us using the details below:
 
-          <br /> Email: legal@bareuptime.co<br /> Support: support@bareuptime.co<br /> Address: Snorkell Associates and Co, Rajasthan, India
+          <br /> Email: legal@hith.chat<br /> Support: support@hith.chat<br /> Address: Snorkell Associates and Co, Rajasthan, India
         </p>
 
         <p>This document was last updated on February 05, 2024</p>
