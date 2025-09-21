@@ -4,6 +4,7 @@ import { GlobalContextProviders } from "./components/_globalContextProviders";
 import Page_0 from "./pages/_index.tsx";
 import PageLayout_0 from "./pages/_index.pageLayout.tsx";
 import Page_Privacy from "./pages/privacy.tsx";
+import Terms_of_Service from "./pages/terms.tsx";
 
 if (!window.requestIdleCallback) {
   window.requestIdleCallback = (cb) => {
@@ -20,10 +21,13 @@ import "./base.css";
 const fileNameToRoute = new Map([
   ["./pages/_index.tsx", "/"],
   ["./pages/privacy.tsx", "/privacy"],
+  ["./pages/terms.tsx", "/terms"],
+  
 ]);
 const fileNameToComponent: Map<string, React.ComponentType<any>> = new Map([
   ["./pages/_index.tsx", Page_0],
   ["./pages/privacy.tsx", Page_Privacy],
+  ["./pages/terms.tsx", Terms_of_Service],
 ]);
 
 function makePageRoute(filename: string) {
@@ -112,6 +116,7 @@ export function App() {
           {toElement({ trie: buildLayoutTrie({
 "./pages/_index.tsx": PageLayout_0,
 "./pages/privacy.tsx": PageLayout_0,
+"./pages/terms.tsx": PageLayout_0,
 }), fileNameToRoute, makePageRoute })} 
           <Route path="*" element={<NotFound />} />
         </Routes>
