@@ -13,13 +13,19 @@ if (!window.requestIdleCallback) {
 import "./base.css";
 
 const fileNameToRoute = new Map([["./pages/_index.tsx","/"]]);
-const fileNameToComponent = new Map([
-    ["./pages/_index.tsx", Page_0],
-  ]);
+const fileNameToComponent: Map<string, React.ComponentType<any>> = new Map([
+  ["./pages/_index.tsx", Page_0],
+]);
 
 function makePageRoute(filename: string) {
   const Component = fileNameToComponent.get(filename);
-  return <Component />;
+  if (!Component) {
+    // If a page component isn't registered, render nothing (router will handle unknown paths),
+    // or you can return a NotFound element instead.
+    return null;
+  }
+  const C = Component as React.ComponentType<any>;
+  return <C />;
 }
 
 function toElement({

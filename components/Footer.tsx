@@ -27,8 +27,8 @@ export const Footer = ({ className }: { className?: string }) => {
               <h4>Company</h4>
               <ul>
                 <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/careers">Careers</Link></li>
-                <li><Link to="/press">Press</Link></li>
+                {/* <li><Link to="/careers">Careers</Link></li> */}
+                {/* <li><Link to="/press">Press</Link></li> */}
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
@@ -37,7 +37,7 @@ export const Footer = ({ className }: { className?: string }) => {
               <ul>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/help-center">Help Center</Link></li>
-                <li><Link to="/api-docs">API Docs</Link></li>
+                {/* <li><Link to="/api-docs">API Docs</Link></li> */}
                 <li><Link to="/status">Status</Link></li>
               </ul>
             </div>
