@@ -45,7 +45,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
                 <AvatarFallback>U3</AvatarFallback>
               </Avatar>
             </div>
-            <p>Trusted by over 1,000+ teams worldwide</p>
+            <p>Trusted by over 100+ teams worldwide</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
