@@ -3,18 +3,27 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { GlobalContextProviders } from "./components/_globalContextProviders";
 import Page_0 from "./pages/_index.tsx";
 import PageLayout_0 from "./pages/_index.pageLayout.tsx";
+import Page_Privacy from "./pages/privacy.tsx";
 
 if (!window.requestIdleCallback) {
   window.requestIdleCallback = (cb) => {
-    setTimeout(cb, 1);
+    const id = setTimeout(cb, 1);
+    // Type of setTimeout in browsers is number
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    return id as number;
   };
 }
 
 import "./base.css";
 
-const fileNameToRoute = new Map([["./pages/_index.tsx","/"]]);
+const fileNameToRoute = new Map([
+  ["./pages/_index.tsx", "/"],
+  ["./pages/privacy.tsx", "/privacy"],
+]);
 const fileNameToComponent: Map<string, React.ComponentType<any>> = new Map([
   ["./pages/_index.tsx", Page_0],
+  ["./pages/privacy.tsx", Page_Privacy],
 ]);
 
 function makePageRoute(filename: string) {
@@ -102,6 +111,7 @@ export function App() {
         <Routes>
           {toElement({ trie: buildLayoutTrie({
 "./pages/_index.tsx": PageLayout_0,
+"./pages/privacy.tsx": PageLayout_0,
 }), fileNameToRoute, makePageRoute })} 
           <Route path="*" element={<NotFound />} />
         </Routes>
