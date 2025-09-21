@@ -32,9 +32,18 @@ export default function PrivacyPage() {
   }, []);
 
   function renderIndiaPolicy() {
+    const highlightBox: React.CSSProperties = {
+      background: '#fff7f0',
+      border: '1px solid #ffd1a9',
+      padding: 16,
+      borderRadius: 6,
+      marginTop: 8,
+      marginBottom: 16,
+    };
+
     return (
       <div>
-        <h1>Privacy Policy</h1>
+        <h1 style={{ marginTop: 0 }}>Privacy Policy</h1>
         <p>Last updated: February 05, 2024</p>
         <p>
           This Privacy Policy describes Our policies and procedures on the
@@ -130,12 +139,14 @@ export default function PrivacyPage() {
           requirements.
         </p>
 
-        <h4>Security of Your Personal Data</h4>
-        <p>
-          The security of Your Personal Data is important to Us, but remember
-          that no method of transmission over the Internet, or method of
-          electronic storage is 100% secure.
-        </p>
+        <h4 style={{ color: '#7a1f1f' }}>Security of Your Personal Data</h4>
+        <div style={highlightBox}>
+          <p style={{ margin: 0, fontWeight: 600 }}>
+            The security of Your Personal Data is important to us, but remember
+            that no method of transmission over the Internet, or method of
+            electronic storage is 100% secure.
+          </p>
+        </div>
 
         <h4>Children's Privacy</h4>
         <p>
@@ -162,9 +173,18 @@ export default function PrivacyPage() {
   }
 
   function renderUSPolicy() {
+    const highlightBox: React.CSSProperties = {
+      background: '#fff7f0',
+      border: '1px solid #ffd1a9',
+      padding: 16,
+      borderRadius: 6,
+      marginTop: 8,
+      marginBottom: 16,
+    };
+
     return (
       <div>
-        <h1>Privacy Policy</h1>
+        <h1 style={{ marginTop: 0 }}>Privacy Policy</h1>
         <p>Effective Date: June 24, 2025</p>
         <p>Last Updated: June 24, 2025</p>
         <h2>1. Introduction</h2>
@@ -224,8 +244,18 @@ export default function PrivacyPage() {
         <h3>5.3 Business Transfers</h3>
         <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred.</p>
 
-        <h2>6. Data Security</h2>
-        <p>We implement appropriate technical and organizational security measures, such as encryption in transit and at rest, secure authentication, regular security assessments, and access controls.</p>
+        <h2 style={{ color: '#7a1f1f' }}>6. Data Security</h2>
+        <div style={highlightBox}>
+          <p style={{ margin: 0, fontWeight: 600 }}>
+            We implement appropriate technical and organizational security measures to protect your information, including:
+
+            Encryption of data in transit and at rest
+            Secure authentication mechanisms
+            Regular security assessments
+            Access controls and employee training
+            However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+          </p>
+        </div>
 
         <h2>7. Your Rights</h2>
         <p>Depending on your location, you may have rights such as access, correction, deletion, portability, and opt-out. To exercise these rights, contact privacy@hith.chat.</p>
@@ -242,14 +272,16 @@ export default function PrivacyPage() {
   }
 
   return (
-    <div style={{ padding: 20 }}>
-      {loading && <p>Loading privacy policy...</p>}
-      {error && <p style={{ color: "red" }}>Failed to load policy: {error}</p>}
-      {!loading && !error && (
-        <div>
-          {currency === "INR" ? renderIndiaPolicy() : renderUSPolicy()}
-        </div>
-      )}
+    <div style={{ padding: 20, display: 'flex', justifyContent: 'center' }}>
+      <div style={{ maxWidth: 900, width: '100%' }}>
+        {loading && <p>Loading privacy policy...</p>}
+        {error && <p style={{ color: "red" }}>Failed to load policy: {error}</p>}
+        {!loading && !error && (
+          <div>
+            {currency === "INR" ? renderIndiaPolicy() : renderUSPolicy()}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
