@@ -10,12 +10,8 @@ export const Footer = ({ className }: { className?: string }) => {
         <div className={styles.main}>
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <img src="/public/assets/logo.svg" alt="Taral logo" width={32} height={32} />
-              <span>Taral</span>
+              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="Taral logo" width={160} height={90} />
             </Link>
-            <p className={styles.tagline}>
-              The future of easy customer support.
-            </p>
           </div>
           <div className={styles.linksGrid}>
             <div className={styles.linkColumn}>
