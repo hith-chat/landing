@@ -7,7 +7,7 @@ import styles from './PricingSection.module.css';
 
 export const PricingSection = ({ className }: { className?: string }) => {
   return (
-    <section className={`${styles.pricing} ${className || ''}`}>
+    <section id="pricing" className={`${styles.pricing} ${className || ''}`}>
       <div className={styles.container}>
         <div className={styles.header}>
           <Badge variant="outline" className={styles.badge}>
