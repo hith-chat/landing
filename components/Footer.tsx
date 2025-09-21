@@ -24,7 +24,7 @@ export const Footer = ({ className }: { className?: string }) => {
                 <li><Link to="/features">Features</Link></li>
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/integrations">Integrations</Link></li>
-                <li><Link to="/demo">Book a Demo</Link></li>
+                <li><a href="https://calendly.com/sumansaurabh-1/heith" target="_blank" rel="noreferrer">Book a Demo</a></li>
               </ul>
             </div>
             <div className={styles.linkColumn}>
