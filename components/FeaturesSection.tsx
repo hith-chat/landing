@@ -16,6 +16,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import styles from './FeaturesSection.module.css';
 
 const mainFeatures = [
@@ -78,21 +79,6 @@ export const FeaturesSection = ({ className }: { className?: string }) => {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <div style={{ 
-            background: 'var(--primary)', 
-            color: 'var(--primary-foreground)', 
-            padding: 8, 
-            borderRadius: 8,
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 8,
-            marginBottom: 16,
-            fontSize: 14,
-            fontWeight: 600
-          }}>
-            <Zap size={16} />
-            Platform Features
-          </div>
           <h2 className={styles.title}>
             Everything you need for world-class customer support
           </h2>
@@ -182,12 +168,14 @@ export const FeaturesSection = ({ className }: { className?: string }) => {
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-              Start Free Trial
+              Get Started
               <ArrowRight size={20} style={{ marginLeft: 8 }} />
             </Button>
-            <Button variant="outline" size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-              View Integrations
-            </Button>
+            <Link to="/integrations" style={{ textDecoration: 'none' }}>
+              <Button variant="outline" size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
+                View Integrations
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

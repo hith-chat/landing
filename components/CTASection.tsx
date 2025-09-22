@@ -15,7 +15,7 @@ export const CTASection = ({ className }: { className?: string }) => {
           </p>
           <div className={styles.actions}>
             <Button asChild size="lg">
-              <Link to="/signup">Start Free Trial</Link>
+              <Link to="/signup">Get Started</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className={styles.outlineButton}>
               <Link to="/contact-sales">Talk to Sales</Link>

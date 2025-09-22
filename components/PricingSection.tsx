@@ -335,7 +335,7 @@ function BigTokenSlider() {
               </div>
             </div>
             <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-              {price === 0 ? 'Start Free' : 'Get Started'}
+              {price === 0 ? 'Get Started' : 'Get Started'}
             </Button>
           </div>
         </div>
