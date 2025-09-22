@@ -57,7 +57,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
               }}
             />
             <Button type="submit" size="lg" style={{ padding: '12px 20px', fontWeight: 700 }}>
-              Get Started Free
+              Get Started
             </Button>
             <Button asChild variant="ghost" size="lg">
               <a href="https://calendly.com/sumansaurabh-1/heith" target="_blank" rel="noreferrer">
@@ -65,7 +65,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
               </a>
             </Button>
           </form>
-          {error && <div style={{ color: 'var(--destructive)', marginTop: 8 }}>{error}</div>}
+          {error && <div style={{ color: 'var(--destructive, #ef4444)', marginTop: 8 }}>{error}</div>}
 
           <div className={styles.socialProof} style={{ marginTop: 18 }}>
             <div className={styles.avatars}>
