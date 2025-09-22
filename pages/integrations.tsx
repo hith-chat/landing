@@ -15,8 +15,9 @@ import {
   Puzzle,
   Webhook,
   Shield,
-  Clock
+  Clock,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const integrations = [
   {
@@ -312,11 +313,12 @@ export default function IntegrationsPage() {
             </p>
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
               <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-                Start Integration
+                
+                <Link to="https://app.heith.chat/signup" target='_blank'>Start Integration</Link>
                 <ArrowRight size={20} style={{ marginLeft: 8 }} />
               </Button>
               <Button variant="outline" size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-                Contact Sales
+                <Link to="https://calendly.com/sumansaurabh-1/heith" target='_blank'>Contact Sales</Link>
               </Button>
             </div>
           </div>

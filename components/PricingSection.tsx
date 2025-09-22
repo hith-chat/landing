@@ -333,7 +333,7 @@ function BigTokenSlider() {
               </div>
             </div>
             <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-              {price === 0 ? 'Get Started' : 'Get Started'}
+              <Link to="https://app.heith.chat/signup" target='_blank'>Get Started</Link>
             </Button>
           </div>
         </div>
