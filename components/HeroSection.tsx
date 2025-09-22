@@ -82,7 +82,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
             customer communications.
           </h1>
           <p className={styles.subheadline}>
-            A modern, AI-powered chat and ticketing platform that feels personal—not robotic. Turn visitors into loyal customers with intelligent automation.
+            A modern, AI-powered chat and ticketing platform that feels personal-not robotic.
           </p>
 
           <form onSubmit={onSubmit} style={{ 
