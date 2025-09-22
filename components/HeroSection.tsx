@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button } from './Button';
 import { Avatar, AvatarImage, AvatarFallback } from './Avatar';
-import { MoveRight, Sparkles, Zap, MessageCircle } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 import styles from './HeroSection.module.css';
 
 export const HeroSection = ({ className }: { className?: string }) => {
@@ -35,37 +35,8 @@ export const HeroSection = ({ className }: { className?: string }) => {
   return (
     <section className={`${styles.hero} ${className || ''}`}>
       <div className={styles.container}>
-        {/* Floating elements for visual appeal */}
-        <div style={{ 
-          position: 'absolute', 
-          top: '20%', 
-          left: '10%', 
-          animation: 'float 6s ease-in-out infinite',
-          opacity: 0.6,
-          zIndex: 0
-        }}>
-          <Sparkles size={24} color="var(--primary)" />
-        </div>
-        <div style={{ 
-          position: 'absolute', 
-          top: '60%', 
-          right: '15%', 
-          animation: 'float 4s ease-in-out infinite reverse',
-          opacity: 0.4,
-          zIndex: 0
-        }}>
-          <Zap size={20} color="var(--secondary)" />
-        </div>
-        <div style={{ 
-          position: 'absolute', 
-          bottom: '30%', 
-          left: '5%', 
-          animation: 'float 5s ease-in-out infinite',
-          opacity: 0.5,
-          zIndex: 0
-        }}>
-          <MessageCircle size={18} color="var(--accent)" />
-        </div>
+        
+        
 
         {/* Left column: headline + form */}
         <div className={styles.content} style={{
