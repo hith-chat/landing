@@ -13,7 +13,10 @@ import {
   Search,
   Globe,
   Check,
-  ArrowRight
+  ArrowRight,
+  Mail,
+  Slack,
+  Puzzle
 } from 'lucide-react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
@@ -23,28 +26,28 @@ const mainFeatures = [
   {
     icon: <Bot size={32} />,
     title: 'AI-Powered Chat Widget',
-    description: 'Intelligent chat widget that provides instant responses using advanced AI, reducing response time by 90%.',
+    description: 'Intelligent chat widget that provides instant responses.',
     highlights: ['Instant AI responses', 'Natural language processing', 'Custom training on your data', '24/7 availability'],
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   },
   {
     icon: <MessageSquare size={32} />,
     title: 'Multi-Platform Support',
-    description: 'Unified ticket management across native platform, Zendesk, and Freshdesk integrations.',
+    description: 'Unified ticket management across platforms.',
     highlights: ['Native Hith support', 'Zendesk integration', 'Freshdesk integration', 'Unified dashboard'],
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
   },
   {
     icon: <Bell size={32} />,
     title: 'Smart Notifications',
-    description: 'Get notified instantly via email, Slack, or browser notifications when tickets need attention.',
+    description: 'Get notified instantly when tickets need attention.',
     highlights: ['Email alerts', 'Slack integration', 'Browser notifications', 'Custom notification rules'],
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
   },
   {
     icon: <BookOpen size={32} />,
     title: 'Knowledge Base Creation',
-    description: 'Build comprehensive help documentation with AI assistance and smart content suggestions.',
+    description: 'Build comprehensive help documentation with AI-Agent assistance.',
     highlights: ['AI-assisted writing', 'Smart categorization', 'Search optimization', 'Version control'],
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
   },
@@ -71,6 +74,14 @@ const additionalFeatures = [
   { icon: <Search size={20} />, text: 'Advanced search and filtering' },
   { icon: <Globe size={20} />, text: 'Multi-language support' },
   { icon: <Zap size={20} />, text: 'Custom automations and workflows' }
+];
+
+const integrationsIcons = [
+  { id: 'native', name: 'Native Hith', icon: <MessageSquare size={28} />, anchor: 'native' },
+  { id: 'zendesk', name: 'Zendesk', icon: <Puzzle size={28} />, anchor: 'zendesk' },
+  { id: 'freshdesk', name: 'Freshdesk', icon: <Globe size={28} />, anchor: 'freshdesk' },
+  { id: 'slack', name: 'Slack', icon: <Slack size={28} />, anchor: 'slack' },
+  { id: 'email', name: 'Email', icon: <Mail size={28} />, anchor: 'email' }
 ];
 
 export const FeaturesSection = ({ className }: { className?: string }) => {
@@ -158,13 +169,28 @@ export const FeaturesSection = ({ className }: { className?: string }) => {
         </div>
 
 
+        {/* Integrations icons row (icon-first, SEO-friendly) */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', marginBottom: 28, flexWrap: 'wrap' }}>
+          {integrationsIcons.map((it) => (
+            <a key={it.id} href={`/integrations#${it.anchor}`} title={it.name} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+              <div style={{ width: 72, height: 72, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                {it.icon}
+              </div>
+              {/* visible label optional - keep small visually for clarity */}
+              <span style={{ fontSize: 12, color: 'var(--muted-foreground)' }}>{it.name}</span>
+              {/* hidden text for SEO and accessibility */}
+              <span style={{position:'absolute',width:1,height:1,padding:0,margin:-1,overflow:'hidden',clip:'rect(0,0,0,0)',whiteSpace:'nowrap',border:0}}>{it.name}</span>
+            </a>
+          ))}
+        </div>
+
         {/* CTA Section */}
         <div style={{ textAlign: 'center' }}>
           <h3 style={{ fontSize: 28, fontWeight: 800, margin: 0, marginBottom: 12 }}>
             Ready to transform your customer support?
           </h3>
           <p style={{ fontSize: 18, color: 'var(--muted-foreground)', margin: 0, marginBottom: 24 }}>
-            Join thousands of companies delivering exceptional customer experiences with Hith
+            Join hundreds of companies delivering exceptional customer experiences with Hith
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>

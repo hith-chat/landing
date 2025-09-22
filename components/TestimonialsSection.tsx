@@ -5,28 +5,28 @@ import styles from './TestimonialsSection.module.css';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    title: 'Support Lead, Acme Inc.',
-    avatar: 'https://randomuser.me/api/portraits/women/12.jpg',
-    fallback: 'SJ',
+    name: 'Sunil Agarwal',
+    title: 'CTO, Penify',
+    avatar: 'https://www.penify.dev/_next/static/media/sunil.dd2e3068.webp',
+    fallback: 'SA',
     rating: 5,
-    quote: 'This platform has revolutionized our support workflow. We\'re resolving tickets 40% faster and our customers have never been happier. A true game-changer!',
+    quote: 'This platform is extremely easy to integrate. I was able to set it up in minutes and start managing customer queries efficiently.',
   },
   {
-    name: 'Michael Chen',
-    title: 'CEO, Innovate Co.',
-    avatar: 'https://randomuser.me/api/portraits/men/45.jpg',
-    fallback: 'MC',
+    name: 'Akansha Sinha',
+    title: 'CEO, BareUptime',
+    avatar: 'https://www.penify.dev/_next/static/media/akansha.68cfed9b.webp',
+    fallback: 'AK',
     rating: 5,
-    quote: 'The AI chat is incredibly powerful. It handles most of our common queries, allowing our team to focus on complex issues. Our satisfaction scores are through the roof.',
+    quote: 'The AI chat is incredibly powerful. It handles most of our common request in my uptime monitoring, allowing me to focus on product development.',
   },
   {
     name: 'Emily Rodriguez',
-    title: 'Founder, Startup Hub',
+    title: 'Founder, NBC Universal',
     avatar: 'https://randomuser.me/api/portraits/women/33.jpg',
     fallback: 'ER',
     rating: 5,
-    quote: 'As a small team, efficiency is key. This tool gives us the power of a large support department without the overhead. The setup was a breeze!',
+    quote: 'As a small team, efficiency is key. This tool has helped how we handle customer support, making it faster and more effective.',
   },
 ];
 

@@ -17,8 +17,6 @@ export const PricingSection = ({ className }: { className?: string }) => {
           <h2 className={styles.title}>
             Simple, Transparent Pricing
           </h2>
-          {/* Slider: first 5000 tokens free. Simple proportional messages estimate. */}
-          
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24, alignItems: 'center', marginBottom: 32 }}>
@@ -54,7 +52,7 @@ export const PricingSection = ({ className }: { className?: string }) => {
             </div>
             <div className={styles.faqItem}>
               <h4>Do tokens expire?</h4>
-              <p>No! Your tokens never expire. Purchase once and use them whenever you need them across all features.</p>
+              <p>Tokens expire after 1 year. Purchase once and use them whenever you need them across all features.</p>
             </div>
             <div className={styles.faqItem}>
               <h4>Can I upgrade or add more tokens?</h4>

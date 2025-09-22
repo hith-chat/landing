@@ -10,15 +10,14 @@ export const CTASection = ({ className }: { className?: string }) => {
         <div className={styles.content}>
           <h2 className={styles.title}>Ready to transform your customer support?</h2>
           <p className={styles.subtitle}>
-            Join thousands of businesses already delighting their customers.
-            Start your free 14-day trial today. No credit card required.
+            Join hundreds of businesses already delighting their customers. No credit card required.
           </p>
           <div className={styles.actions}>
             <Button asChild size="lg">
               <Link to="/signup">Get Started</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className={styles.outlineButton}>
-              <Link to="/contact-sales">Talk to Sales</Link>
+              <Link target='_blank' to="https://calendly.com/sumansaurabh-1/heith?month=2025-09">Talk to Sales</Link>
             </Button>
           </div>
         </div>
