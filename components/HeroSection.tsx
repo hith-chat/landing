@@ -24,7 +24,7 @@ export const HeroSection = ({ className }: { className?: string }) => {
     }
     setError(null);
     // navigate to signup with email pre-filled
-    window.location.href = `https://app.heith.chat/signup?email=${encodeURIComponent(email)}`;
+    window.location.href = `https://app.hith.chat/signup?email=${encodeURIComponent(email)}`;
   }
 
   return (
@@ -57,10 +57,10 @@ export const HeroSection = ({ className }: { className?: string }) => {
               }}
             />
             <Button type="submit" size="lg" style={{ padding: '12px 20px', fontWeight: 700 }}>
-              <Link to="https://app.heith.chat/signup" target='_blank'>Get Started</Link>
+              <Link to="https://app.hith.chat/signup" target='_blank'>Get Started</Link>
             </Button>
             <Button asChild variant="ghost" size="lg">
-              <a href="https://calendly.com/sumansaurabh-1/heith" target="_blank" rel="noreferrer">
+              <a href="https://calendly.com/sumansaurabh-1/hith" target="_blank" rel="noreferrer">
                 Book a Demo <MoveRight size={18} />
               </a>
             </Button>

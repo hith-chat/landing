@@ -194,7 +194,7 @@ export const FeaturesSection = ({ className }: { className?: string }) => {
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-              <Link to="https://app.heith.chat/signup" target='_blank'>Get Started</Link>
+              <Link to="https://app.hith.chat/signup" target='_blank'>Get Started</Link>
               <ArrowRight size={20} style={{ marginLeft: 8 }} />
             </Button>
             <Link to="/integrations" style={{ textDecoration: 'none' }}>

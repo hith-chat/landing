@@ -14,10 +14,10 @@ export const CTASection = ({ className }: { className?: string }) => {
           </p>
           <div className={styles.actions}>
             <Button asChild size="lg">
-              <Link to="https://app.heith.chat/signup" target='_blank'>Get Started</Link>
+              <Link to="https://app.hith.chat/signup" target='_blank'>Get Started</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className={styles.outlineButton}>
-              <Link target='_blank' to="https://calendly.com/sumansaurabh-1/heith?month=2025-09">Talk to Sales</Link>
+              <Link target='_blank' to="https://calendly.com/sumansaurabh-1/hith?month=2025-09">Talk to Sales</Link>
             </Button>
           </div>
         </div>

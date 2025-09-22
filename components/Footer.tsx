@@ -10,7 +10,7 @@ export const Footer = ({ className }: { className?: string }) => {
         <div className={styles.main}>
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="Heith logo" width={200} height={100} />
+              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="hith logo" width={200} height={100} />
             </Link>
           </div>
           <div className={styles.linksGrid}>
@@ -20,7 +20,7 @@ export const Footer = ({ className }: { className?: string }) => {
                 <li><a href="/#features">Features</a></li>
                 <li><a href="/#pricing">Pricing</a></li>
                 <li><Link to="/integrations">Integrations</Link></li>
-                <li><a href="https://calendly.com/sumansaurabh-1/heith" target="_blank" rel="noreferrer">Book a Demo</a></li>
+                <li><a href="https://calendly.com/sumansaurabh-1/hith" target="_blank" rel="noreferrer">Book a Demo</a></li>
               </ul>
             </div>
             <div className={styles.linkColumn}>

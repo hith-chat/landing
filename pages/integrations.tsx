@@ -314,11 +314,11 @@ export default function IntegrationsPage() {
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
               <Button size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
                 
-                <Link to="https://app.heith.chat/signup" target='_blank'>Start Integration</Link>
+                <Link to="https://app.hith.chat/signup" target='_blank'>Start Integration</Link>
                 <ArrowRight size={20} style={{ marginLeft: 8 }} />
               </Button>
               <Button variant="outline" size="lg" style={{ padding: '12px 32px', fontSize: 16, fontWeight: 700 }}>
-                <Link to="https://calendly.com/sumansaurabh-1/heith" target='_blank'>Contact Sales</Link>
+                <Link to="https://calendly.com/sumansaurabh-1/hith" target='_blank'>Contact Sales</Link>
               </Button>
             </div>
           </div>
