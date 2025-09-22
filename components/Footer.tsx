@@ -10,7 +10,7 @@ export const Footer = ({ className }: { className?: string }) => {
         <div className={styles.main}>
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="Heith logo" width={160} height={90} />
+              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="Heith logo" width={200} height={100} />
             </Link>
           </div>
           <div className={styles.linksGrid}>
@@ -32,15 +32,7 @@ export const Footer = ({ className }: { className?: string }) => {
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
-            <div className={styles.linkColumn}>
-              <h4>Resources</h4>
-              <ul>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/help-center">Help Center</Link></li>
-                {/* <li><Link to="/api-docs">API Docs</Link></li> */}
-                <li><Link to="/status">Status</Link></li>
-              </ul>
-            </div>
+            
             <div className={styles.linkColumn}>
               <h4>Legal</h4>
               <ul>
