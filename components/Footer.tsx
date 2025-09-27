@@ -10,7 +10,7 @@ export const Footer = ({ className }: { className?: string }) => {
         <div className={styles.main}>
           <div className={styles.brand}>
             <Link to="/" className={styles.logo}>
-              <img src="/public/assets/hith-logo-expanded-filled-with-slogan.svg" alt="hith logo" width={200} height={100} />
+              <img src="/assets/hith-logo-expanded-filled-with-slogan.svg" alt="hith logo" width={200} height={100} />
             </Link>
           </div>
           <div className={styles.linksGrid}>
